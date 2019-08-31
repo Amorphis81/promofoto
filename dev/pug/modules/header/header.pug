@@ -1,3 +1,12 @@
 header.header
-  .header-top
-  .header-main
+  .container
+    a(href="#").logo.header__logo Promo
+      span music
+    .header-signup
+      a(href="#").header-bell
+        +icon('bell', 'header-bell__icon')
+      a(href="#").header-mail
+        +icon('mail', 'header-mail__icon')
+      a(href="#").header-profile
+        .header-profile__name Профиль
+        +icon('enter', '.header-profile__icon')
