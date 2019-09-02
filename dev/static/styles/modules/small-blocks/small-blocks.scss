@@ -1,0 +1,15 @@
+.logo {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 24px;
+  color: $accent;
+  span {
+    color: $white;
+  }
+}
+
+.hover-icon-accent {
+  transition: fill 0.3s;
+  &:hover {
+    fill: $accent;
+  }
+}

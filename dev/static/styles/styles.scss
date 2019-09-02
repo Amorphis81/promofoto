@@ -46,6 +46,20 @@ body {font-family: $main-font;}
   display: flex;
   flex-direction: column;
   height: 100%;
+  &-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  &-inside {
+    height: 100%;
+  }
 }
 
 .content { flex: 1 0 auto; }
@@ -53,8 +67,12 @@ body {font-family: $main-font;}
 .container {
   margin: 0 auto;
   max-width: $content-size;
-  padding: 0 80px;
+  padding: 0;
   width: 100%;
+  &-inside {
+    padding: 36px 56px;
+    height: 100%;
+  }
 }
 
 

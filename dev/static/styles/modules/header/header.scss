@@ -1,4 +1,47 @@
 .header {
   padding: 24px 0;
-  
+  background-color: $header-footer-bg;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &-signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header {
+      &-bell__icon {
+        margin-right: 22px;
+        @include size(16px, 20px);
+        fill: $white;
+      }
+      &-mail__icon {
+        margin-right: 42px;
+        @include size(20px, 16px);
+        fill: $white;
+      }
+      &-profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: color .3s, fill .3s;
+        &__name { transition: color .3s; }
+        &:hover .header-profile__name { color: $accent; }
+        &__icon { transition: fill .3s; }
+        &:hover .header-profile__icon { fill: $accent; }
+        &__name {
+          margin-right: 20px;
+          color: $white;
+          font-weight: 600;
+          font-size: 16px;
+        }
+        &__icon {
+          @include size(18px);
+          fill: $white;
+        }
+      }
+    }
+  }
 }
