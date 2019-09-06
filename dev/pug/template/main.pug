@@ -17,11 +17,10 @@ html(lang="ru-RU")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
 		<![endif]-->
 	body(class=pageClass)
-		.wrapper
-			include ../modules/header/header
+		.wrapper(style="background-image: url(static/images/general/main-bg.png)")
+			include ../modules/header/header-main
 			.content
 				block content
-			include ../modules/footer/footer
 		script(src="static/js/jquery-3.4.0.min.js")
 		script(src="static/js/libs.min.js")
 		script(src="static/js/main.js")

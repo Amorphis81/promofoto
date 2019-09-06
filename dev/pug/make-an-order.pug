@@ -5,5 +5,12 @@ block variables
 	- var pageClass = 'make-order-page'
 
 block content
-	h2 Сделать заказ
-	include pages/make-an-order/category
+	h2.h2.order__maintitle Сделать заказ
+	form(action="#").order-form
+		.order-form-categories
+			.order__title Категория
+			.categories-container
+				+categories-item('Soundcloud', 'soundcloud', 'SoundCloud_logo.png')
+				+categories-item('Soundcloud', 'soundcloud1', 'SoundCloud_logo.png')
+				+categories-item('Soundcloud', 'soundcloud2', 'SoundCloud_logo.png')
+				+categories-item('Soundcloud', 'soundcloud3', 'SoundCloud_logo.png')

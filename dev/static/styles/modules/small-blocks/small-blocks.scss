@@ -13,3 +13,36 @@
     fill: $accent;
   }
 }
+
+.h1 {
+  font-weight: bold;
+  font-size: 80px;
+  color: $accent;
+}
+
+.h2 {
+  color: $text;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.button {
+  color: $white;
+  background-color: $accent;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all .2s;
+  &:hover {
+    color: $accent;
+    border: 1px solid $accent;
+    background-color: $white;
+  }
+}
+
+.button-o {
+  color: $white;
+  border: 1px solid $accent;
+  background-color: transparent;
+}

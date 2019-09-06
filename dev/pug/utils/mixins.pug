@@ -5,3 +5,18 @@ mixin icon(name,mod)
 	else
 		svg(class="svg-sprite-icon icon-" + name)
 			use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
+
+mixin services-block(filename, title)
+	a(href="#").s-main-services-block
+		.s-main-services-block__img(style="background-image: url(static/images/content/services/" + filename + ")")
+		.s-main-services-block__title= title
+		// .services-block
+
+mixin categories-item(title, idname, filename)
+	input(id=idname, type='radio', name="category")
+	label.categories-item(for=idname)
+		.categories-item__check
+			+icon('check', 'categories-item__check-icon')
+		.categories-item__img(style="background-image: url(static/images/content/services/" + filename + ")")
+		.categories-item__title= title
+	//.categories-item

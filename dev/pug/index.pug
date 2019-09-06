@@ -5,5 +5,22 @@ block variables
 	- var pageClass = 'index-page'
 
 block content
-	.container
-		h1 Promomusic
+	section.s-main
+		.container
+			.s-main-descr Вы диджей, музыкант, продюсер, эмси, вокалист?
+			h1.h1.s-main-title Тогда Вам к Нам!
+			.s-main-offer Прокачаем по таким направлениям как:
+			.s-main-services
+				+services-block('SoundCloud_logo.png', 'Soundcloud')
+				+services-block('mixcloud.png', 'Mixcloud')
+				+services-block('logotip-promodj.png', 'Promodj')
+				+services-block('pyromusic.png', 'Pyromusic')
+				+services-block('mixupload.png', 'Mixupload')
+				+services-block('bananastreet.png', 'Bananastreet')
+				+services-block('djane-mag.png', 'Djanemag')
+				+services-block('djane-top.png', 'Djanetop')
+			.s-main-registration
+				.s-main-registration__title Регистрируйтесь и погнали!
+				.s-main-registration__buttons
+					a(href="#").button.s-main-registration__button Войти
+					a(href="#").s-main-registration__button-o Регистрация
