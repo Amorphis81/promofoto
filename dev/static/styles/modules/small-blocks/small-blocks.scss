@@ -46,3 +46,22 @@
   border: 1px solid $accent;
   background-color: transparent;
 }
+
+.order-form-notes {
+  margin-bottom: 16px;
+  textarea {
+    padding: 10px;
+  }
+}
+
+.order-form-total {
+  .total {
+    &__sum {
+      display: flex;
+      align-items: center;
+      span { 
+        margin-left: 47px;
+      }
+    }
+  }
+}

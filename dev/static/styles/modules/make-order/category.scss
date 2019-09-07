@@ -13,6 +13,7 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
+          flex-wrap: wrap;
         }
         &-item {
           position: relative;
@@ -21,6 +22,10 @@
           text-align: center;
           display: block;
           cursor: pointer;
+          &:hover {
+            .categories-item__img { border: 1px solid $accent; }
+            .categories-item__title { color: $accent; }
+          }
           &__img {
             margin-bottom: 9px;
             width: 100%;
@@ -39,6 +44,9 @@
             position: absolute;
             top: 6px;
             right: 8px;
+            display: none;
+            align-items: center;
+            justify-content: center;
             width: 24px;
             height: 24px;
             background-color: $text;
@@ -46,6 +54,7 @@
             &-icon {
               width: 14px;
               height: 10px;
+              fill: $accent;
             }
           }
         }
@@ -54,10 +63,8 @@
     input[type=radio]{
       display: none;
     }
+    input[type=radio]:checked + label.categories-item {
+      .categories-item__check { display: flex; }
+    }
   }
-}
-
-
-input[type=radio]:checked + label.categories-item {
-  .categories-item__img { background-color: pink;}
 }

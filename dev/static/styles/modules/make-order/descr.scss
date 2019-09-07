@@ -1,0 +1,20 @@
+.order-form-descr {
+  position: relative;
+  margin-bottom: 50px;
+  &::after {
+    content: '';
+    height: 130%;
+    width: 2000px;
+    position: absolute;
+    top: -17%;
+    left: -28px;
+    background-color: #FAFAFA;
+    z-index: -1;
+  }
+  .descr {
+    &__text {
+      max-width: 552px;
+      line-height: 24px;
+    }
+  }
+}

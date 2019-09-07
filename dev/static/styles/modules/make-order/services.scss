@@ -1,0 +1,58 @@
+.order-form-services {
+  margin-bottom: 44px;
+}
+
+.services {
+  &__title { margin-bottom: 5px; }
+  &-select {
+    margin-bottom: 14px;
+    position: relative;
+    appearance: none!important;
+    padding: 7px 8px;
+    width: 288px;
+    height: 30px;
+    border: 1px solid $text;
+    border-radius: 4px;
+    background: url(../images/general/select-arrow.png) no-repeat 96% 50%;
+    font-weight: 500;
+    font-size: 13px;
+    color: #A5A5A5;
+    &:hover { border-color: $accent; }
+    &:focus {
+      border-color: $text;
+    }
+  }
+  &-url {
+    display: flex;
+    flex-direction: column;
+    &-block {
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      span{
+        margin-left: 9px;
+        font-size: 28px;
+        color: $accent;
+        cursor: pointer;
+      }
+    }
+    &__input {
+      padding: 7px 8px;
+      width: 288px;
+      height: 30px;
+      border: 1px solid $text;
+      border-radius: 4px;
+    }
+  }
+  &-add-url {
+    display: flex;
+    align-items: center;
+    color: $accent;
+    font-weight: 500;
+    cursor: pointer;
+    span {
+      margin-right: 9px;
+      font-size: 28px;
+    }
+  }
+}
