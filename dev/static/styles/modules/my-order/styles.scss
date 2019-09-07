@@ -1,0 +1,50 @@
+.myorder{
+  &__maintitle { margin-bottom: 25px; }
+  &-tab {
+    &-row {
+      position: relative;
+      padding: 26px 16px 21px;
+      display: flex;
+      align-items: center;
+      &-grey::after {
+        content: '';
+        display: block;
+        width: 150%;
+        height: 100%;
+        background-color: #FAFAFA;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+    }
+  }
+  &-id { width: 10%; }
+  &-service { 
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    &__descr {
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    &__about { color: $accent; }
+  }
+  &-status {
+    width: 18%;
+    &__processing { color: #F2994A; }
+    &__inprogres { color: #2F80ED; }
+    &__complete { color: $accent; }
+  }
+  &-date { width: 12%; }
+  &-action {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    &__item {
+      font-weight: 600;
+      color: $accent;
+      &:first-child { margin-bottom: 16px; }
+    }
+  }
+}

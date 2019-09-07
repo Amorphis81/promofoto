@@ -1,0 +1,30 @@
+.order-form {
+  &-notes {
+  margin-bottom: 16px;
+  textarea {
+    padding: 10px;
+    width: 360px;
+    border: 1px solid $text;
+    border-radius: 4px;
+  }
+}
+&-total {
+  margin-bottom: 16px;
+  .total {
+    &-field {
+      padding: 24px 16px 40px;
+      max-width: 360px;
+      border: 1px solid $text;
+      border-radius: 4px;      
+    }
+    &__sum {
+      display: flex;
+      align-items: center;
+      span { 
+        margin-left: 47px;
+      }
+    }
+  }
+  }
+  &__button { padding: 16px 33px; }
+}

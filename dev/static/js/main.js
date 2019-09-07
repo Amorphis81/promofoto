@@ -27,4 +27,13 @@ $(document).ready(function () {
     //     console.log(123);
     //     $(this).parent().remove();
     // })
+
+    //My orders bg
+    let myorderTab = $('.myorder-tab-row-content');
+    let myorderTabLength = $('.myorder-tab-row-content').length;
+    for (i = 0; i < myorderTabLength; i++){
+        if (i%2 != 1) {
+            $(myorderTab[i]).addClass('myorder-tab-row-grey');
+        }
+    }
 });

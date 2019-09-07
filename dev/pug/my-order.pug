@@ -1,0 +1,49 @@
+extends template/inside
+
+block variables
+	- var title = 'Мои заказы'
+	- var pageClass = 'my-order-page'
+
+block content
+	h2.h2.myorder__maintitle Мои заказы
+	.myorder-tab
+		.myorder-tab-row.myorder-tab-header
+			.myorder-id ID
+			.myorder-service Услуга
+			.myorder-status Статус
+			.myorder-date Дата
+			.myorder-action Действие
+		//- .myorder-tab-row
+		.myorder-tab-row.myorder-tab-row-content
+			.myorder-id 468
+			.myorder-service
+				.myorder-service__descr Soundcloud - описание выбраной услуги
+				a(href="#").myorder-service__about Подробнее
+			.myorder-status.myorder-status__processing В обработке
+			.myorder-date 28.08.2019
+			.myorder-action
+				a(href="#").myorder-action__item Заказать еще
+				a(href="#").myorder-action__item Задать вопрос
+		//- .myorder-tab-row
+		.myorder-tab-row.myorder-tab-row-content
+			.myorder-id 468
+			.myorder-service
+				.myorder-service__descr Soundcloud - описание выбраной услуги
+				a(href="#").myorder-service__about Подробнее
+			.myorder-status.myorder-status__inprogres Выполняется
+			.myorder-date 28.08.2019
+			.myorder-action
+				a(href="#").myorder-action__item Заказать еще
+				a(href="#").myorder-action__item Задать вопрос
+		//- .myorder-tab-row
+		.myorder-tab-row.myorder-tab-row-content
+			.myorder-id 468
+			.myorder-service
+				.myorder-service__descr Soundcloud - описание выбраной услуги
+				a(href="#").myorder-service__about Подробнее
+			.myorder-status.myorder-status__complete Завершен
+			.myorder-date 28.08.2019
+			.myorder-action
+				a(href="#").myorder-action__item Заказать еще
+				a(href="#").myorder-action__item Задать вопрос
+		//- .myorder-tab-row
