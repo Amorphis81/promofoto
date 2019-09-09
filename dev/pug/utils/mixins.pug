@@ -20,3 +20,36 @@ mixin categories-item(title, idname, filename)
 		.categories-item__img(style="background-image: url(static/images/content/services/" + filename + ")")
 		.categories-item__title= title
 	//.categories-item
+
+mixin service-block()
+	.service-block
+		.service-block__title Название услуги
+		.service-block__descr Тут должно быть небольшое описание по одной услуге
+		.service-block__price 2 500 ₽
+		.service-block-buttons
+			.button.service-block__order Заказать
+			.button.service-block__more
+				+icon('more', 'service-block__more-icon')
+			.service-block-buttons__popup.service-block-buttons__popup-small
+				a(href="#").popup__string.popup__string-about Подробнее
+				a(href="#").popup__string Заказать звонок
+			.service-block-buttons__popup.service-block-buttons__popup-descr
+				+icon('close', 'popup__close')
+				.popup__text Услуга — не материальный товар, который можно потрогать, поэтому она часто сама по себе вызывает недоверие у потенциального заказчика. Ваша задача — суметь привлечь внимание, продемонстрировать выгоды предложения.
+
+
+
+mixin catalog-servise(title, file)
+	.service-wraper
+		.service-name
+			.service-name__img
+				img(src="static/images/content/services/" + file + "", alt="" + title + "")
+			.service-name__title= title
+		//.service-name
+		.service-list
+			+service-block()
+			+service-block()
+			+service-block()
+			+service-block()
+			+service-block()
+			+service-block()

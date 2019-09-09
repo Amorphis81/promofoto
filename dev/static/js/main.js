@@ -36,4 +36,18 @@ $(document).ready(function () {
             $(myorderTab[i]).addClass('myorder-tab-row-grey');
         }
     }
+
+    //Catalog popup
+    $('.button.service-block__more').on('click', function() {
+        $(this).parent().find('.service-block-buttons__popup-small').toggleClass('popup-visible');
+    })
+
+    $('.popup__string-about').on('click', function() {
+        $(this).parent().parent().find('.service-block-buttons__popup-descr').toggleClass('popup-visible');
+    })
+
+    $('.popup__close').on('click', function() {
+        $(this).parent().removeClass('popup-visible');
+    })
+
 });

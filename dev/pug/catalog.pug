@@ -1,0 +1,10 @@
+extends template/inside
+
+block variables
+	- var title = 'Мои заказы'
+	- var pageClass = 'my-order-page'
+
+block content
+	h2.h2.catalog__maintitle Цены и услуги
+	+catalog-servise('Soundcloud', 'SoundCloud_logo.png')
+	+catalog-servise('Mixcloud', 'mixcloud.png')

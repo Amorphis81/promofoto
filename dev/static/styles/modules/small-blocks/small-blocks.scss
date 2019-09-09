@@ -39,6 +39,7 @@
     color: $accent;
     border: 1px solid $accent;
     background-color: $white;
+    .svg-sprite-icon { fill: $accent; }
   }
 }
 
