@@ -1,0 +1,34 @@
+.faq {
+  &__maintitle { margin-bottom: 48px; }
+  &-wrapper { max-width: 648px; }
+  &-block {
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: $text;
+    cursor: pointer;
+    &-question {
+      margin-bottom: 16px;
+      padding: 16px;
+      border: 1px solid $text;
+      border-radius: 4px;
+      background: url(../images/general/arrow-down.png) no-repeat 97% center;
+      font-size: 13px;
+    }
+    &-answer {
+      display: none;
+      padding: 16px;
+      border: 1px solid $text;
+      border-radius: 4px;
+      background: url(../images/general/arrow-up.png) no-repeat 97% 21%;
+      // transition: all .2s;
+      &__title {
+        margin-bottom: 28px;
+        font-size: 13px;
+      }
+      &__text {padding-left: 7px;}
+      &-dropdown {
+        display: block;
+      }
+    }
+  }
+}
