@@ -19,19 +19,19 @@ $(document).ready(function () {
     // })
 
     //My orders bg
-    let myorderTab = $('.myorder-tab-row-content');
-    let myorderTabLength = $('.myorder-tab-row-content').length;
-    for (i = 0; i < myorderTabLength; i++){
+    var myorderTab = $('.myorder-tab-row-content');
+    var myorderTabLength = $('.myorder-tab-row-content').length;
+    for (var i = 0; i < myorderTabLength; i++){
         if (i%2 != 1) {
             $(myorderTab[i]).addClass('myorder-tab-row-grey');
         }
     }
     
     //News bg
-    let newsBlock = $('.news-block');
-    let newsBlockLength = $('.news-block').length;
+    var newsBlock = $('.news-block');
+    var newsBlockLength = $('.news-block').length;
     
-    for (let i = 0; i < newsBlockLength; i++){
+    for (var i = 0; i < newsBlockLength; i++){
         if (i%2 == 1) {
             $(newsBlock[i]).addClass('news-block-dark');
         }
