@@ -6,6 +6,7 @@
     font-weight: 500;
     color: $text;
     cursor: pointer;
+    &:last-child { margin-bottom: 100px; }
     &-question {
       margin-bottom: 16px;
       padding: 16px;

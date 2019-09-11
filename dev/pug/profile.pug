@@ -1,0 +1,25 @@
+extends template/inside
+
+block variables
+	- var title = 'Профиль'
+	- var pageClass = 'profile-page'
+
+block content
+	h2.h2.profile__maintitle Профиль
+	form.profile-form
+		.profile-form__label Логин
+		input(type="text", placeholder="Login").profile-form__field
+		.profile-form__label E-mail
+		input(type="email", placeholder="E-mail").profile-form__field
+		.profile-form__label Имя
+		input(type="text", placeholder="Name").profile-form__field
+		.profile-form__label Телеграмм
+		input(type="text", placeholder="@login").profile-form__field
+		.profile-form__label Телефон
+		input(type="tel", placeholder="phone number").profile-form__field.profile-form__field-tel
+		h3.h3.profile-form__title Изменить пароль
+		.profile-form__label Старый пароль
+		input(type="password", placeholder="Старый пароль").profile-form__field.profile-form__field-password
+		.profile-form__label Новый пароль
+		input(type="password", placeholder="Новый пароль").profile-form__field.profile-form__field-password
+		button(type="submit").button.profile-form__button Изменить пароль

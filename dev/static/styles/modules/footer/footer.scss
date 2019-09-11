@@ -1,12 +1,17 @@
 .footer {
+  position: relative;
   display: flex;
+  align-items: center;
   flex: 0 0 auto;
   padding: 32px 0;
   background-color: $header-footer-bg;
   .container {
     display: flex;
+    width: 80%;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    left: 56px;
     color: $white;
     font-family: 'OpenSans', sans-serif;
     font-weight: 600;

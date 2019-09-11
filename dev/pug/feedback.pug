@@ -1,0 +1,14 @@
+extends template/inside
+
+block variables
+	- var title = 'Обратная связь'
+	- var pageClass = 'feedback-page'
+
+block content
+	h2.h2.feedback__maintitle Обратная связь
+	form.feedback-form
+		.feedback-form__label Тема
+		input(type="text", placeholder="Что случилось").feedback-form__input
+		.feedback-form__label Комментарий
+		textarea(cols="74", rows="11", placeholder="Что случилось")
+		button(type="submit").button.feedback-form__button Отправить

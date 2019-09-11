@@ -1,0 +1,25 @@
+.feedback {
+  &-page .wrapper .wrapper-content { height: 100%; }
+  &__maintitle { margin-bottom: 50px; }
+  &-form {
+    &__label {
+      margin-bottom: 6px;
+      font-weight: 500;
+      font-size: 13px;
+    }
+    input[type=text], textarea {
+      margin-bottom: 15px;
+      padding: 8px;
+      border: 1px solid #1E1E1E;
+      border-radius: 4px;
+      &::placeholder{ font-size: 13px;}
+    }
+    input[type=text] { width: 360px; }
+    textarea {
+      display: block;
+      max-width: 552px;
+      max-height: 192px;
+    }
+    &__button { padding: 15px 46px; }
+  }
+}
