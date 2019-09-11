@@ -1,21 +1,11 @@
 $(document).ready(function () {
     svg4everybody({});
 
-    //select
-    // $('.services-select').each(function() {
-    //     var $this = $(this),
-    //     selectOption = $this.find('option'),
-    //     selectOptionLength = selectOption.length,
-    //     selectedOption = selectOption.filter(':selected'),
-    //     dur = 500;
-
-    //     $this.hide();
-    //     $this.wrap('<div class="select"></div>');
-    //     $('<div>', {
-    //       class: 'select__gap',
-    //       text: 'Выберите'
-    //     }).insertAfter($this);
-    // })
+    //Categories Item
+    $('.categories-item__label').on('click', function(){
+        $('.categories-item__check').removeClass('categories-item__check-visible');
+        $(this).parent().find('.categories-item__check').addClass('categories-item__check-visible');
+    })
 
     //add url input
     $('.services-add-url').on('click', function() {
