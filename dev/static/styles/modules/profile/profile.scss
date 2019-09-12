@@ -1,5 +1,5 @@
 .profile {
-  &-page .wrapper .wrapper-content { height: 100%; }
+  // &-page .wrapper .wrapper-content { height: 100%; }
   &__maintitle { margin-bottom: 50px; }
   &-form {
     max-width: 360px;
@@ -24,7 +24,10 @@
         &:last-of-type { margin-bottom: 24px; }
       }
     }
-    &__title { margin-bottom: 33px; }
+    &__title {
+      margin-top: 14px;
+      margin-bottom: 33px; 
+    }
     &__button {
       width: 213px; 
       padding: 17px 30px; 
